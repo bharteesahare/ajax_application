@@ -1,0 +1,7 @@
+<div id="users">
+  <% @users.each do |user| %>
+    <div id="current_customer">
+        <td><%= link_to 'Show', customer_path(user), remote: true %></td> # This will will contain the partial
+    </div>
+  <% end %>
+</div>
